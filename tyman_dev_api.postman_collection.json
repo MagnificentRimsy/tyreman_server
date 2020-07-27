@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "09dad953-9dff-4813-852b-b659d125e9dd",
+		"name": "tyman_dev_api",
+		"description": "API Collection for Tyeman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://devapi.yikascorner.com/api/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9zaWdudXAiLCJpYXQiOjE1OTQ2NDcyMjksImV4cCI6MTU5NDY1MDgyOSwibmJmIjoxNTk0NjQ3MjI5LCJqdGkiOiJVZXFBdDhCa0lPS3JmVU1LIiwic3ViIjozLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.KQPvzQ-YV8CFJyEVOCYM8nI_-SyVDUOQHhPOVWNmRnk",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fname",
+							"value": "Maryam",
+							"type": "text"
+						},
+						{
+							"key": "lname",
+							"value": "Luka",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "maryaml@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0907175006",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "FCT",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Abuja",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NDY0OTU1OSwibmJmIjoxNTk0NjQ5NTU5LCJqdGkiOiJ0MkxlRmtESlpnbG1qbDBhIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.s2lMjJeucfPmYxksqINQfTS0yYVote0viFEhDEp3cak",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://devapi.yikascorner.com/api/signup",
+					"protocol": "https",
+					"host": [
+						"devapi",
+						"yikascorner",
+						"com"
+					],
+					"path": [
+						"api",
+						"signup"
+					]
+				},
+				"description": "Register Endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "https://devapi.yikascorner.com/api/user?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2YXBpLnlpa2FzY29ybmVyLmNvbVwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NDY2MTAyNSwiZXhwIjoxNTk0NjY0NjI1LCJuYmYiOjE1OTQ2NjEwMjUsImp0aSI6IklwS2VYWE0xejJucmVyaVgiLCJzdWIiOjIsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.qdqdsAD2amr3s8RcEIPm2nEfmYlbv_ak3IgGzjfZCNA",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "solomonakp@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://devapi.yikascorner.com/api/user?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2YXBpLnlpa2FzY29ybmVyLmNvbVwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NDY2MTAyNSwiZXhwIjoxNTk0NjY0NjI1LCJuYmYiOjE1OTQ2NjEwMjUsImp0aSI6IklwS2VYWE0xejJucmVyaVgiLCJzdWIiOjIsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.qdqdsAD2amr3s8RcEIPm2nEfmYlbv_ak3IgGzjfZCNA",
+					"protocol": "https",
+					"host": [
+						"devapi",
+						"yikascorner",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2YXBpLnlpa2FzY29ybmVyLmNvbVwvYXBpXC9sb2dpbiIsImlhdCI6MTU5NDY2MTAyNSwiZXhwIjoxNTk0NjY0NjI1LCJuYmYiOjE1OTQ2NjEwMjUsImp0aSI6IklwS2VYWE0xejJucmVyaVgiLCJzdWIiOjIsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.qdqdsAD2amr3s8RcEIPm2nEfmYlbv_ak3IgGzjfZCNA"
+						}
+					]
+				},
+				"description": "Get User (Customer or Staff) Endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "https://devapi.yikascorner.com/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "solomonakp@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://devapi.yikascorner.com/api/register",
+					"protocol": "https",
+					"host": [
+						"devapi",
+						"yikascorner",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				},
+				"description": "Login Endpoint"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
